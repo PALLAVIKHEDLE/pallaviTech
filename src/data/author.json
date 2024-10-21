@@ -1,27 +1,27 @@
 {
-    "name": "Max Böck",
-    "email": "hello@mxb.dev",
+    "name": "Pallavi Khedle",
+    "email": "pallavi8khedle@gmail.com",
     "avatar": "/assets/images/avatar2.jpg",
     "social": {
         "twitter": {
-            "name": "mxbck",
-            "url": "https://twitter.com/mxbck"
+            "name": "Pallavi",
+            "url": "https://twitter.com/KhedlePallavi"
         },
         "github": {
-            "name": "maxboeck",
-            "url": "https://github.com/maxboeck"
+            "name": "Pallavi",
+            "url": "https://github.com/PALLAVIKHEDLE/"
         },
-        "mastodon": {
-            "name": "mxbck",
-            "url": "https://front-end.social/@mxbck"
+        "linkedin": {
+            "name": "Pallavi",
+            "url": "https://www.linkedin.com/in/pallavikhedle/"
         },
-        "codepen": {
-            "name": "mxbck",
-            "url": "https://codepen.io/mxbck/"
+        "medium": {
+            "name": "Pallavi",
+            "url": "https://medium.com/@pallavi8khedle"
         },
-        "notist": {
-            "name": "mxb",
-            "url": "https://noti.st/mxb"
+        "leetcode": {
+            "name": "Pallavi",
+            "url": "https://leetcode.com/pallavi_khedle/"
         }
     }
 }

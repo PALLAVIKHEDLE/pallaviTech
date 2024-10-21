@@ -1,10 +1,10 @@
 export default {
-    title: 'Max Böck',
+    title: 'Pallavi Khedle',
     description:
-        'Max Böck is a professional front-end developer based in Vienna, Austria.',
+        'Pallavi Khedle is a professional front-end developer based in California, USA.',
     lang: 'en',
     locale: 'en_US',
     domain: 'mxb.dev',
-    url: 'https://mxb.dev',
-    repo: 'https://github.com/maxboeck/mxb'
+    url: 'https://pallavi.tech',
+    
 }

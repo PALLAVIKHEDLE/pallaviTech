@@ -1,7 +1,7 @@
 {
-    "name": "mxb.dev",
+    "name": "pallavi.tech",
     "version": "4.2.0",
-    "description": "Personal Website of Max Böck",
+    "description": "Personal Website of Pallavi",
     "license": "CC BY-SA",
     "browserslist": [
         "defaults"
@@ -21,11 +21,7 @@
         "workbox": "workbox generateSW workbox.config.cjs",
         "debug": "DEBUG=Eleventy* npm start"
     },
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/maxboeck/mxb"
-    },
-    "author": "Max Böck",
+    "author": "Pallavi",
     "dependencies": {
         "@11ty/eleventy": "^3.0.0-alpha.10",
         "@11ty/eleventy-img": "^5.0.0-beta.4",
