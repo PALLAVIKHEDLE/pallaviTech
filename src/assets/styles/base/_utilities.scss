@@ -62,3 +62,88 @@
         display: block;
     }
 }
+
+/* Styling for the wrapper to align items in a row */
+.availability-wrapper {
+    display: flex;
+    flex-direction: column; /* Stacked on smaller screens */
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2rem; /* Add some space between the sections */
+
+    @include mq(md) {
+        flex-direction: row; /* Align side by side on medium screens and above */
+        align-items: center;
+    }
+}
+
+/* Styling for the availability section */
+.availability {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 0;
+
+    @include mq(lg) {
+        padding: 3rem 0;
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: var(--color-primary);
+        margin-bottom: 1rem;
+
+        @include mq(md) {
+            font-size: 3rem;
+        }
+    }
+
+    &__status {
+        display: flex;
+        align-items: center;
+        font-size: 1.125rem; // 18px
+        color: var(--color-text);
+        margin-bottom: 1.5rem;
+
+        @include mq(md) {
+            font-size: 1.25rem; // 20px
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            background-color: var(--color-primary);
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: var(--color-primary);
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+
+      
+    }
+}
+/* Styling for the contact-info section */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: var(--color-text-light);
+
+    @include mq(md) {
+        font-size: 1.125rem; // Adjust font size for larger screens
+    }
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+}
