@@ -1,41 +1,41 @@
-<ol reversed class="postlist" start="{{ postlist.length }}">
-    {% for post in postlist | reverse %}
-        <li class="postlist__item h-entry {% if post.data.draft %}postlist__item--draft{% endif %}">
-            <h2 class="postlist__title p-name">
-                <a
-                    href="{{ post.url | url }}"
-                    class="postlist__link u-url"
-                    rel="bookmark"
-                >
-                    {{ post.data.title }}
-                </a>
-            </h2>
-
-            <div class="postlist__meta">
-                <time class="postlist__date dt-published" datetime="{{ post.date | dateToISO }}">
-                    {{ post.date | readableDate('dd LLL yyyy') }}
-                </time>
-
-                {% if post.data.tags %}
-                    <span aria-hidden="true">&sdot;</span>
-                    <span class="postlist__tags p-category">
-                        {{ post.data.tags|join(', ') }}
-                    </span>
-                {% endif %}
-
-                {% if post.data.draft %}
-                    <span aria-hidden="true">&sdot;</span>
-                    <span class="postlist__status">(Draft)</span>
-                {% endif %}
-            </div>
-
-            <p class="postlist__excerpt p-summary">
-            {% if post.data.description %}
-                {{ post.data.description }}
-            {% else %}
-                {{ post.templateContent | excerpt | striptags }}
-            {% endif %}
-            </p>
-        </li>
-    {% endfor %}
-</ol>
+<div class="capabilities-container">
+    <div class="capabilities">
+        <div class="capability ux-cx">
+            <span class="emoji">😍</span>
+            <h3>UX/CX</h3>
+            <ul>
+                <li>User Experience Design</li>
+                <li>Rapid Prototyping</li>
+                <li>Usability Testing</li>
+                <li>UX Reviews</li>
+                <li>Interaction Design</li>
+                <li>Customer journeys</li>
+            </ul>
+        </div>
+        <div class="capability product-design">
+            <span class="emoji">🎨</span>
+            <h3>Product Design</h3>
+            <ul>
+                <li>User Interface Design</li>
+                <li>Visual Design</li>
+                <li>Visual Identities</li>
+                <li>Design Systems</li>
+                <li>Responsive & Mobile Websites</li>
+                <li>Modular Grid Systems</li>
+                <li>Brand guidelines</li>
+            </ul>
+        </div>
+        <div class="capability development">
+            <span class="emoji">👨‍💻</span>
+            <h3>Development</h3>
+            <ul>
+                <li>Front-end development</li>
+                <li>Responsive & Mobile Websites</li>
+                <li>Mobile apps</li>
+                <li>Animations</li>
+                <li>SaaS applications</li>
+                <li>Platform solutions</li>
+            </ul>
+        </div>
+    </div>
+</div>

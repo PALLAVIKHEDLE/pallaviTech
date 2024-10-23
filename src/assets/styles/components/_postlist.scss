@@ -1,39 +1,45 @@
-.postlist {
-    @include container-narrow;
+.capabilities-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
 
-    &__item {
-        margin-bottom: 3rem;
+.capabilities {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
 
-        @include mq(md) {
-            margin-bottom: 5rem;
-        }
-    }
-    &__link {
-        display: block;
+.capability {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
 
-        .postlist__item--draft & {
-            color: var(--color-secondary);
-        }
-    }
-    &__title {
-        margin-bottom: 0;
-    }
-    &__meta {
-        font-size: 1.125rem;
-        margin-bottom: 1rem;
-        color: var(--color-text-offset);
-    }
-    &__tags {
-        font-family: Georgia, Times, serif;
-        text-transform: uppercase;
-        font-size: 0.875em;
-        letter-spacing: 3px;
-    }
-    &__status {
-        font-weight: 700;
-        color: var(--color-secondary);
-    }
-    &__excerpt {
-        @include body-text();
-    }
+.capability h3 {
+    font-size: 24px;
+    color: var(--color-primary); /* Use the primary color variable */
+    margin-bottom: 20px;
+}
+
+.emoji {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.capability ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.capability ul li {
+    font-size: 16px;
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+.capability ul li::before {
+    content: "•";
+    margin-right: 5px;
+    color: var(--color-primary); /* Use the primary color variable */
 }
