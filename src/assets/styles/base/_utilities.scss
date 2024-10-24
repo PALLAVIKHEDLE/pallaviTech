@@ -119,6 +119,12 @@
         }
     }
 
+    // Added flex container for the buttons
+    &__buttons-container {
+        display: flex;  // Makes buttons inline
+        gap: 10px;      // Adds space between the buttons
+    }
+
     &__button {
         display: inline-block;
         padding: 0.75rem 1.5rem;
@@ -128,10 +134,19 @@
         text-decoration: none;
         border-radius: 4px;
         transition: background-color 0.3s ease;
-
-      
+    }
+    .Resumebutton {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: var(--color-primary);
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
     }
 }
+
 /* Styling for the contact-info section */
 .contact-info {
     display: flex;
