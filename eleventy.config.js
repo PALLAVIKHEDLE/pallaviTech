@@ -87,6 +87,7 @@ export default function (config) {
     config.addLayoutAlias('post', 'post.njk')
     config.addLayoutAlias('draft', 'draft.njk')
     config.addLayoutAlias('note', 'note.njk')
+    config.addLayoutAlias('capabilities', 'block.njk')
 
     // Pass-through files
     config.addPassthroughCopy('src/site.webmanifest')
@@ -136,6 +137,7 @@ export default function (config) {
         },
         templateFormats: ['njk', 'md', '11ty.js'],
         htmlTemplateEngine: 'njk',
-        markdownTemplateEngine: 'njk'
+        markdownTemplateEngine: 'njk',
+        dataTemplateEngine: "njk"
     }
 }
